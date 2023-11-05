@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
        {
-         "src": "deporteropf.py",
+         "src": "deporteropf/wsgi.py",
          "use": "@vercel/python",
          "config": {
            "maxDuration": 120
@@ -20,7 +20,7 @@
        },
        {
          "src": "/(.*)",
-         "dest": "deporteropf.py"
+         "dest": "deporteropf/wsgi.py"
        }
     ]
    }
