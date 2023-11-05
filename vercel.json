@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
        {
-         "src": "manage.py",
+         "src": "deporteropf.py",
          "use": "@vercel/python",
          "config": {
            "maxDuration": 120
@@ -20,7 +20,7 @@
        },
        {
          "src": "/(.*)",
-         "dest": "manage.py"
+         "dest": "deporteropf.py"
        }
     ]
    }
