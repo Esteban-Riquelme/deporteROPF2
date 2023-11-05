@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Planes Por id
+{% endblock title %}
+{%block head%}
+<h1>Bienvenido a nuestros planes personalizados</h1>
+{%endblock head%}
+
+{% block body %}
+
+<div class="container">
+    <div class="img">
+        <img src="C:\Users\kelor\Documents\GitHub\ProyectoDeporteROPF\static\images\rodri2.JPG">
+    </div>
+    <div class="plan-info">
+        <div class="plan-texto">
+            <h1>Bienvenido a nuestro plan: {{ p.nombre_plan }}</h1>
+            <h2>{{ p.duracion }}</h2>
+            <p>{{p.descripcion}}</p>
+            <p>{{p.beneficio}}</p>
+        </div>
+        <div class="precio-btn">
+            <a href="">Contratar Plan</a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock body %}
